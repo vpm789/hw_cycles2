@@ -131,7 +131,7 @@ public class Main {
         int currentYear = currentDate.getYear();
         int lowYear = currentYear - 200;
         int highYear = currentYear + 100;
-        while (cometYear < currentYear) {
+        while (cometYear <= highYear) {
             cometYear = cometYear + cometPeriod;
             if (cometYear > lowYear && cometYear < highYear) {
                 System.out.println(cometYear);
